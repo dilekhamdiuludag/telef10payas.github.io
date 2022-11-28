@@ -154,7 +154,7 @@
 <b:include name='postauthorbox'/>
 <b:include name='postsharebutton'/>
 <b:include name='relatedpost'/></div><div id='baca-juga'/>
-<script>var bacaJugaJudul=[],bacaJugaNum=0,bacaJugaUrl=[];function bacaJuga(h){for(var g=0;g&lt;h.feed.entry.length;g++){var e=h.feed.entry[g];bacaJugaJudul[bacaJugaNum]=e.title.$t;for(var a=0;a&lt;e.link.length;a++){if(&quot;alternate&quot;==e.link[a].rel){bacaJugaUrl[bacaJugaNum]=e.link[a].href,bacaJugaNum++;break}}}}function showBacaJuga(a){var v=document.querySelector(&quot;#baca-juga&quot;),g=document.createElement(&quot;div&quot;),n=document.querySelector(&quot;.post-body-artikel&quot;).querySelectorAll(&quot;div &gt; br, span &gt; br, div &gt; p, span &gt; p&quot;),u=Math.ceil(0.5*n.length),t=document.getElementById(&quot;related&quot;);g.setAttribute(&quot;class&quot;,&quot;baca-juga-wrap&quot;);var r={bacaJuga:!0,jumlahBacaJuga:3,judulBacaJuga:&quot;Baca Juga&quot;};optionVioMagz(r);function e(d,b){b.parentNode.insertBefore(d,b.nextSibling)}if(!0===r.bacaJuga&amp;&amp;void 0!==n[u]){e(v,null!==t?t:n[u]);for(var i=0;i&lt;bacaJugaUrl.length;i++){bacaJugaUrl[i]==a&amp;&amp;(bacaJugaUrl.splice(i,1),bacaJugaJudul.splice(i,1))}var c=Math.floor((bacaJugaJudul.length-1)*Math.random()),i=0;if(0&lt;bacaJugaJudul.length&amp;&amp;0&lt;r.jumlahBacaJuga){v.appendChild(g),function(b){b=b.previousElementSibling;null!=b&amp;&amp;&quot;BR&quot;===b.tagName&amp;&amp;(b.style.display=&quot;none&quot;)}(v);for(var l=&quot;&lt;strong&gt;&quot;+r.judulBacaJuga+&quot;&lt;/strong&gt;&lt;ul&gt;&quot;;i&lt;bacaJugaJudul.length&amp;&amp;i&lt;r.jumlahBacaJuga;i++){l+=&#39;&lt;li&gt;&lt;a href=&quot;&#39;+bacaJugaUrl[c]+&#39;&quot;&gt;&#39;+bacaJugaJudul[c]+&quot;&lt;/a&gt;&lt;/li&gt;&quot;,c&lt;bacaJugaJudul.length-1?c++:c=0}g.innerHTML=l+=&quot;&lt;/ul&gt;&quot;}}}</script>
+<script>var bacaJugaJudul=[],bacaJugaNum=0,bacaJugaUrl=[];function bacaJuga(h){for(var g=0;g&lt;h.feed.entry.length;g++){var e=h.feed.entry[g];bacaJugaJudul[bacaJugaNum]=e.title.$t;for(var a=0;a&lt;e.link.length;a++){if(&quot;alternate&quot;==e.link[a].rel){bacaJugaUrl[bacaJugaNum]=e.link[a].href,bacaJugaNum++;break}}}}function showBacaJuga(e){var c=document.querySelector(&quot;#baca-juga&quot;),l=document.createElement(&quot;div&quot;),t=document.querySelector(&quot;.post-body-artikel&quot;).querySelectorAll(&quot;div &gt; br, span &gt; br, div &gt; p, span &gt; p&quot;),a=Math.ceil(0.5*t.length),v=document.getElementById(&quot;related&quot;);l.setAttribute(&quot;class&quot;,&quot;baca-juga-wrap&quot;);var u={bacaJuga:!0,jumlahBacaJuga:3,judulBacaJuga:&quot;Baca Juga&quot;};optionVioMagz(u);function i(d,b){b.parentNode.insertBefore(d,b.nextSibling)}if(!0===u.bacaJuga&amp;&amp;void 0!==t[a]){i(c,null!==v?v:t[a]);for(var n=0;n&lt;bacaJugaUrl.length;n++){bacaJugaUrl[n]==e&amp;&amp;(bacaJugaUrl.splice(n,1),bacaJugaJudul.splice(n,1))}var g=Math.floor((bacaJugaJudul.length-1)*Math.random()),n=0;if(0&lt;bacaJugaJudul.length&amp;&amp;0&lt;u.jumlahBacaJuga){c.appendChild(l),function(b){b=b.previousElementSibling;null!=b&amp;&amp;&quot;BR&quot;===b.tagName&amp;&amp;(b.style.display=&quot;none&quot;)}(c);for(var r=&quot;&lt;strong&gt;&quot;+u.judulBacaJuga+&quot;&lt;/strong&gt;&lt;ul&gt;&quot;;n&lt;bacaJugaJudul.length&amp;&amp;n&lt;u.jumlahBacaJuga;n++){r+=&#39;&lt;li&gt;&lt;a href=&quot;&#39;+bacaJugaUrl[g]+&#39;&quot;&gt;&#39;+bacaJugaJudul[g]+&quot;&lt;/a&gt;&lt;/li&gt;&quot;,g&lt;bacaJugaJudul.length-1?g++:g=0}l.innerHTML=r+=&quot;&lt;/ul&gt;&quot;}}}</script>
 <b:loop values='data:post.labels' var='label'>
 <script expr:src='&quot;/feeds/posts/summary/-/&quot; + data:label.name + &quot;?alt=json-in-script&amp;callback=bacaJuga&amp;max-results=5&quot;'/>
 </b:loop>
@@ -1061,10 +1061,11 @@ judulBacaJuga : &quot;Ayrıca Oku&quot;,
 <b:widget id='HTML642' locked='true' title='Kode Menu Navigasi' type='HTML' version='2' visible='true'>
 <b:widget-settings>
 <b:widget-setting name='content'>&lt;li&gt;&lt;a href=&quot;/&quot;&gt;Anasayfa&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/search&quot;&gt;Tüm Yayınlar&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;has-sub&quot;&gt;&lt;a href=&quot;#&quot;&gt;Menü&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;/p/iletisim.html&quot;&gt;İletişim&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/p/itiraf-ediyorum.html&quot;&gt;İtiraf Ediyorum&lt;/a&gt;
-&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;/p/hakknda.html&quot;&gt;Hakkında&lt;/a&gt;
+&lt;li&gt;&lt;a href=&quot;/p/iletisim.html&quot;&gt;İletişim&lt;/a&gt;&lt;/li&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/p/gizlilik-politikasi.html&quot;&gt;Gizlilik&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/p/itiraf-ediyorum.html&quot;&gt;İtiraf &lt;/a&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;/p/sitemap.html&quot;&gt;Sitemap&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;</b:widget-setting>
@@ -1089,9 +1090,10 @@ judulBacaJuga : &quot;Ayrıca Oku&quot;,
 <input name='max-results' type='hidden' value='8'/></form></div>
 </header></div><div id='wrapper'>
 <b:section class='bellow-header-widget' id='bellow-header-widget' maxwidgets='1' showaddelement='no'>
-<b:widget id='HTML619' locked='true' title='Widget HTML #1' type='HTML' version='2' visible='false'>
+<b:widget id='HTML619' locked='true' title='Widget HTML #1' type='HTML' version='2' visible='true'>
 <b:widget-settings>
-<b:widget-setting name='content'/>
+<b:widget-setting name='content'>&lt;script async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7069804432776320&quot;
+crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</b:widget-setting>
 </b:widget-settings>
 <b:includable id='main'>
 <b:if cond='data:content != &quot;&quot;'><div class='widget-content'>
@@ -1101,9 +1103,10 @@ judulBacaJuga : &quot;Ayrıca Oku&quot;,
 </b:widget>
 </b:section>
 <b:section class='bellow-header-widget2' id='bellow-header-widget2' maxwidgets='1' showaddelement='no'>
-<b:widget id='HTML616' locked='true' title='Widget HTML #2 (homepage)' type='HTML' version='2' visible='false'>
+<b:widget id='HTML616' locked='true' title='Widget HTML #2 (homepage)' type='HTML' version='2' visible='true'>
 <b:widget-settings>
-<b:widget-setting name='content'/>
+<b:widget-setting name='content'>&lt;script async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7069804432776320&quot;
+crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</b:widget-setting>
 </b:widget-settings>
 <b:includable id='main'>
 <b:if cond='data:view.isHomepage'>
@@ -1991,9 +1994,19 @@ judulBacaJuga : &quot;Ayrıca Oku&quot;,
 </b:if>
 <b:if cond='data:view.isLayoutMode or data:view.isPost'>
 <b:section class='matched-content' id='matched-content' maxwidgets='1' showaddelement='no'>
-<b:widget id='HTML939' locked='true' title='Iklan Matched Content' type='HTML' version='2' visible='false'>
+<b:widget id='HTML939' locked='true' title='Iklan Matched Content' type='HTML' version='2' visible='true'>
 <b:widget-settings>
-<b:widget-setting name='content'/>
+<b:widget-setting name='content'>&lt;script async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7069804432776320&quot;
+crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;ins class=&quot;adsbygoogle&quot;
+style=&quot;display:block; text-align:center;&quot;
+data-ad-layout=&quot;in-article&quot;
+data-ad-format=&quot;fluid&quot;
+data-ad-client=&quot;ca-pub-7069804432776320&quot;
+data-ad-slot=&quot;6293118671&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;
+(adsbygoogle = window.adsbygoogle || []).push({});
+&lt;/script&gt;</b:widget-setting>
 </b:widget-settings>
 <b:includable id='main'><div class='widget-content kode-matched-content'>
 <data:content/></div>
@@ -2014,9 +2027,9 @@ judulBacaJuga : &quot;Ayrıca Oku&quot;,
 </b:section>
 </b:if>
 <b:if cond='data:view.isPost'>
-<script>function LMmiddleAds(i){var e=i.querySelector(&quot;.post-body-artikel&quot;),r=e.querySelectorAll(&quot;div &gt; br, span &gt; br, div &gt; p, span &gt; p&quot;),n=Math.ceil(0.2*r.length),l=Math.ceil(0.7*r.length),t=i.querySelector(&quot;#iklan-tengah1 .widget-content&quot;),o=i.querySelector(&quot;#iklan-tengah2 .widget-content&quot;),a=i.querySelector(&quot;#iklan-atas .widget-content&quot;),d=i.querySelector(&quot;#iklan-bawah .widget-content&quot;),c=e.querySelector(&quot;#iklan1&quot;),u=e.querySelector(&quot;#iklan2&quot;);null!=a&amp;&amp;&quot;\n&quot;!=a.innerHTML&amp;&amp;e.insertBefore(a,e.childNodes[0]),null!=d&amp;&amp;&quot;\n&quot;!=d.innerHTML&amp;&amp;e.appendChild(d);d=function(g,f,b){function h(j,k){void 0!==k&amp;&amp;k.parentNode.insertBefore(j,k.nextSibling)}1&lt;r.length?(null!=g&amp;&amp;&quot;\n&quot;!=g.innerHTML&amp;&amp;h(g,null!==f?f:r[b]),function(){for(var m,k=i.querySelectorAll(&quot;.post-body-artikel .iklan-tengah-artikel&quot;),j=0;j&lt;k.length;j++){null!==(m=k[j].previousElementSibling)&amp;&amp;&quot;BR&quot;===m.tagName&amp;&amp;(m.style.display=&quot;none&quot;)}}()):g.parentNode.removeChild(g)};d(t,c,n),d(o,u,l)}LMmiddleAds(document);function matchedAds(){var e,d,f={iklanMatched:!0};optionVioMagz(f),e=document.querySelector(&quot;#ms-matched-content&quot;),d=document.querySelector(&quot;#matched-content .widget-content&quot;),null!=e?1==f.iklanMatched&amp;&amp;null!=d&amp;&amp;&quot;\n&quot;!=d.innerHTML&amp;&amp;e.appendChild(d):d.parentNode.removeChild(d)}matchedAds();</script>
+<script>function LMmiddleAds(i){var e=i.querySelector(&quot;.post-body-artikel&quot;),r=e.querySelectorAll(&quot;div &gt; br, span &gt; br, div &gt; p, span &gt; p&quot;),n=Math.ceil(0.2*r.length),l=Math.ceil(0.7*r.length),t=i.querySelector(&quot;#iklan-tengah1 .widget-content&quot;),o=i.querySelector(&quot;#iklan-tengah2 .widget-content&quot;),a=i.querySelector(&quot;#iklan-atas .widget-content&quot;),d=i.querySelector(&quot;#iklan-bawah .widget-content&quot;),c=e.querySelector(&quot;#iklan1&quot;),u=e.querySelector(&quot;#iklan2&quot;);null!=a&amp;&amp;&quot;\n&quot;!=a.innerHTML&amp;&amp;e.insertBefore(a,e.childNodes[0]),null!=d&amp;&amp;&quot;\n&quot;!=d.innerHTML&amp;&amp;e.appendChild(d);d=function(g,f,b){function h(j,k){void 0!==k&amp;&amp;k.parentNode.insertBefore(j,k.nextSibling)}1&lt;r.length?(null!=g&amp;&amp;&quot;\n&quot;!=g.innerHTML&amp;&amp;h(g,null!==f?f:r[b]),function(){for(var k,j=i.querySelectorAll(&quot;.post-body-artikel .iklan-tengah-artikel&quot;),m=0;m&lt;j.length;m++){null!==(k=j[m].previousElementSibling)&amp;&amp;&quot;BR&quot;===k.tagName&amp;&amp;(k.style.display=&quot;none&quot;)}}()):g.parentNode.removeChild(g)};d(t,c,n),d(o,u,l)}LMmiddleAds(document);function matchedAds(){var d,f,e={iklanMatched:!0};optionVioMagz(e),d=document.querySelector(&quot;#ms-matched-content&quot;),f=document.querySelector(&quot;#matched-content .widget-content&quot;),null!=d?1==e.iklanMatched&amp;&amp;null!=f&amp;&amp;&quot;\n&quot;!=f.innerHTML&amp;&amp;d.appendChild(f):f.parentNode.removeChild(f)}matchedAds();</script>
 <b:elseif cond='data:view.isHomepage'/>
-<script>function infeedAds(){var d,h,e,i,j={IklanInFeed:!0,lokasiIklanInFeed:3};optionVioMagz(j),d=document.createElement(&quot;div&quot;),e=(h=document.querySelector(&quot;.blog-posts&quot;)).querySelectorAll(&quot;.post-outer&quot;)[j.lokasiIklanInFeed-1],i=document.querySelector(&quot;#iklan-infeed .widget-content&quot;),d.setAttribute(&quot;class&quot;,&quot;post-outer infeedads&quot;),1==j.IklanInFeed&amp;&amp;null!=i&amp;&amp;&quot;\n&quot;!=i.innerHTML&amp;&amp;(d.appendChild(i),h.insertBefore(d,e))}infeedAds();</script>
+<script>function infeedAds(){var h,j,i,d,e={IklanInFeed:!0,lokasiIklanInFeed:3};optionVioMagz(e),h=document.createElement(&quot;div&quot;),i=(j=document.querySelector(&quot;.blog-posts&quot;)).querySelectorAll(&quot;.post-outer&quot;)[e.lokasiIklanInFeed-1],d=document.querySelector(&quot;#iklan-infeed .widget-content&quot;),h.setAttribute(&quot;class&quot;,&quot;post-outer infeedads&quot;),1==e.IklanInFeed&amp;&amp;null!=d&amp;&amp;&quot;\n&quot;!=d.innerHTML&amp;&amp;(h.appendChild(d),j.insertBefore(h,i))}infeedAds();</script>
 </b:if></div></div>
 <aside id='sidebar-wrapper'><div class='sidebar-container'>
 <b:section class='sidebar' id='sidebar' preferred='yes'/>
@@ -2300,6 +2313,19 @@ judulBacaJuga : &quot;Ayrıca Oku&quot;,
 </article>
 </b:loop>
 </div>
+</b:includable>
+</b:widget>
+<b:widget id='HTML1' locked='false' title='' type='HTML' visible='true'>
+<b:widget-settings>
+<b:widget-setting name='content'>&lt;script async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7069804432776320&quot;
+crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</b:widget-setting>
+</b:widget-settings>
+<b:includable id='main'>
+<b:if cond='data:content'>
+<b:if cond='data:title'><h2 class='title'><data:title/></h2>
+</b:if><div class='widget-content'>
+<data:content/></div>
+</b:if>
 </b:includable>
 </b:widget>
 </b:section></div>
