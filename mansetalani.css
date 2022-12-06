@@ -1,0 +1,62 @@
+/* Popular Post */
+.PopularPosts .post-snippet {display: none;}
+.PopularPosts a{font-weight: 500; font-size: 14px; list-style: none; line-height: 1.3em; display: block; overflow: hidden;}
+.PopularPosts img{float:left}
+.PopularPosts .item-thumbnail{position: relative; float: left; margin: auto; overflow: hidden;}
+.PopularPosts .post-title {overflow: hidden; position: relative; float: right; border: none; width: 70%; padding: 5px 0;}
+.PopularPosts .post-content{overflow: hidden;position: relative;display: block;margin-bottom:10px}
+.PopularPosts{overflow: hidden;position: relative;}
+#sidebar .widget{ box-shadow:0 3px 5px 0 rgb(9 32 76 / 3%);background-color: #fff; margin-bottom:10px; padding:0 10px;}
+/* Slider yazarlar */
+.meme-slider-2 img {height:180px;border-radius:15px;padding:15px;}
+#yazar{display:flex;width: 100%;}
+#yazar .widget{flex-shrink:0;text-align:center;position:relative;height:245px;}
+#yazar .widget-content{position: relative;width:90%;margin:auto;box-shadow:0px 3px 6px -2px rgb(0 0 0 / 14%);height:240px;background:#f7f2ed;}
+.slideralanimarka {position:relative;background:linear-gradient(-180deg,#ffffff 50%,#f7f2ed 50%); height:350px;}
+.meme-slider-2 .widget h3{font-weight: 400;z-index:1;color:#000;position:absolute;font-size:14px;text-align:center;display:block;margin:auto;width:100%;bottom:10px;}
+.meme-slider-2 .widget span{width: 100%;font-weight:600;position:absolute;text-align:center; display: block; z-index: 200;color:#000;font-size:14px;padding:5px 15px;border-radius:5px;left:50%;transform:translate(-50%,0%);}
+.slideralanimarka .next{transition:background-color 0.3s ease-in-out;margin:0 0px;padding:0px 15px;border:none;font-size:24px;cursor:pointer;position:relative;top:0;right:0;background:#293139;color:#fff;transform:none;box-shadow:none;}
+.slideralanimarka .prev{transition:background-color 0.3s ease-in-out;margin:0 0px;padding:0px 15px;border:none;font-size:24px;cursor:pointer;position:relative;top:0;left:0;background:#293139;color:#fff;transform: none;box-shadow:none;}
+.slideralanimarka .meme-navigation {margin:0px 0;text-align:center;position:absolute;top:15px;right:20px;background:#fff;}
+.slideralanimarka .next:hover,.slideralanimarka .prev:hover{background-color:#f7f2ed;color:#293139}
+/* Yazı Alanı */
+.slideryazi{max-width: 1170px;margin:auto;font-size:22px;margin-bottom:25px;font-weight:600;position: relative;}
+.slideryazi span{display: inline-block;color:#222222;right:-30px;position:relative;background:#fff;padding:0 20px;top:14px;}
+.slideryazi:before {content: "";position: absolute;bottom: 0;left: 50%;transform: translateX(-50%);width:100%;height:3px;background-color: #293139;}
+/* Slider */
+.slideralanim{max-width:1170px;margin:auto;position:relative;margin-top:20px;margin-bottom:20px;overflow:hidden;}
+.meme-container {width: 100%;overflow: hidden;}
+.meme-wrapper {backface-visibility: hidden;transform: translate3d(0, 0, 0);display: flex;width: 100%;}
+.meme-slide {box-sizing: border-box;backface-visibility: hidden;display: flex;flex-shrink: 0;justify-content: center;align-items: center;width: 100%;}
+.meme-navigation {margin: 0px 0; text-align: center;}
+.next{transition:background-color 0.3s ease-in-out;margin:0 5px;padding:5px 10px;border:none;font-size:24px;cursor:pointer;position:absolute;top:50%;transform:translateY(-50%);right:0;background:rgba(20,20,20,.5);box-shadow:0 0 7px 0 rgb(34 34 34 / 40%);color:#fff;}
+.prev{transition:background-color 0.3s ease-in-out;margin:0 5px;padding:5px 10px;border: none;font-size:24px;cursor:pointer;position:absolute;top:50%;transform:translateY(-50%);left:0;background:rgba(20,20,20,.5);box-shadow:0 0 7px 0 rgb(34 34 34 / 40%);color:#fff;}
+.next:hover,.prev:hover {background-color: #ccc;}
+.next:before {margin-left: 1px;content:"\f105"; font-family: FontAwesome; font-style: normal; font-weight: normal; text-decoration: inherit;}
+.prev:before {margin-left: -1px;content:"\f104";font-family: FontAwesome; font-style: normal; font-weight: normal; text-decoration: inherit;}
+.meme-pagination {margin:0px 0;text-align: center;}
+.meme-bullet {cursor: pointer;display: inline-block;vertical-align: middle;width: 32px;height: 32px;margin:0px 5px;background-color: white;border:0;font-weight:600;font-family:'Poppins';}
+.meme-bullet.active {background-color:#f13939;color: white;}
+/* Slider Sonradan */
+.meme-slider-1 a{width:100%;height:365px;}
+.meme-slider a{width:100%;height:330px;}
+.meme-slider-1 img{width:100%;height:365px;}
+.meme-slider img{width:50%;height:330px;float:right;display:block;object-fit:cover;}
+.meme-slider .meme-pagination {position: absolute; width:33px;left:0px;text-align:center;z-index:1;margin:0;top: 50%;transform:translateY(-50%);}
+.recent-post-title {transition: transform 0.5s 0.5s ease;position: relative;bottom: 50%;text-align: center;}
+.recent-post-title span{color: white;font-size: 20px;}
+.meme-slider .recent-post-title {transition:transform 0.5s 0.5s ease;position:absolute;text-align:center;color:white;font-size:20px;bottom:0%;height:100%;width:76%;z-index:2;background:linear-gradient(to right,#000000 60%,#000000 65%,rgba(0, 0, 0, 0) 100%);}
+.meme-slider .recent-post-title span{width:61%;height:100%;text-align:left;-webkit-box-orient:vertical;color:#fff;font-weight: 600;line-height:42px;font-size:38px;padding-left:40px;display:flex;justify-content:center;z-index:6;flex-direction:column;}
+.meme-slider .meme-bullet {cursor:pointer;display:inline-block;vertical-align:middle;margin:0px 5px;background-color:#b2b2b2;border:0;width:15px;height:15px;border-radius:100%;margin-bottom:10px;color:#b2b2b2;}
+.meme-slider .meme-bullet.active {background-color:#f13939;color:#f13939;}
+.meme-slider-3 a{width:100%;height:200px;}
+.meme-slider-3 img{width:100%;height:200px;object-fit: cover;}
+.meme-slider-3 .recent-post-title {transition:transform 0.5s 0.5s ease;position:relative;bottom:100%;text-align: center;background:linear-gradient(to bottom,transparent 0,rgba(0,0,0,.9) 90%);height:100%;}
+.meme-slider-3 .recent-post-title span {font-size: 20px;top: 80%;position:relative;}
+/* Slider Sag */
+.slideralanimsag .meme-slide{width:100%;position:relative;display:block;float:left;margin-bottom:14px;}
+.slideralanimsag .recent-post-title {bottom:0;font-size:14px;color:#000;margin:0;padding:5px 5px;line-height:1.5;font-weight:500;text-align: left;}
+.slideralanimsag .recent-post-title span {color:#202020;font-size:16px;}
+.slideralanimsag .meme-slide img{display:inline-block;width: 100%;height:81px;object-fit:cover;max-width:180px;float:left;padding-right:10px;}
+.slideralanimsol{width:63%;float:left;position:relative;margin:auto;}
+.slideralanimsag{width:35%;float:right;position:relative;margin:auto;}
