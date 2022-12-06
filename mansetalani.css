@@ -60,3 +60,38 @@
 .slideralanimsag .meme-slide img{display:inline-block;width: 100%;height:81px;object-fit:cover;max-width:180px;float:left;padding-right:10px;}
 .slideralanimsol{width:63%;float:left;position:relative;margin:auto;}
 .slideralanimsag{width:35%;float:right;position:relative;margin:auto;}
+/* Footer */
+.footer{background-color:#0a0a0a;padding: 70px 0;margin-top: 15px;}
+.footer-col{width: 25%;padding: 0 15px;}
+.footer-col h4{font-size: 18px;color: #ffffff;text-transform: capitalize;margin-bottom: 35px;font-weight: 500;position: relative;}
+.footer-col h4::before{content: '';position: absolute;left:0;bottom: -10px;background-color:#141414;height: 2px;box-sizing: border-box;width: 50px;}
+.footer-col ul li:not(:last-child){margin-bottom: 10px;}
+.footer-col ul li a{font-size: 16px;text-transform: capitalize;color: #ffffff;text-decoration: none;font-weight: 300;color: #bbbbbb;display: block;transition: all 0.3s ease;}
+.footer-col ul li a:hover{color: #ffffff;padding-left: 8px;}
+.footer-col .social-links a{display: inline-block;height: 40px;width: 40px;background-color: rgba(255,255,255,0.2);margin:0 10px 10px 0;text-align: center;line-height: 40px;border-radius: 50%;color: #ffffff;transition: all 0.5s ease;}
+.footer-col .social-links a:hover{color: #24262b;background-color: #ffffff;}
+/* Copy Right */
+.copy-right{padding:10px 0;background:#141414;text-align:center;margin-bottom:0px}
+.copy-right p{color:#e5e5e5;outline: none;text-transform: uppercase;font-size:14px}
+.copy-right p a{transition: 0.5s ease;-o-transition: 0.5s ease;-webkit-transition: 0.5s ease;color:#e50814;outline: none;text-transform: uppercase;font-size: 1em;}
+.copy-right p a:hover{color:#e5e5e5}
+/* Reklam Alanı */
+#content1{background:#f7f2ed;color:rgba(0,0,0,0.15);font-weight:700;overflow:hidden;width:100%;height:250px;z-index:1;clear:both;position:relative;margin-top:20px;}
+#content1 .button{margin:0;position:absolute;left:5%;top: 50%; transform: translateY(-50%);list-style:none}
+#content1 .button a.download{display:inline-block;background:#202020;color:#fff;font-size:14px;font-weight:400;padding:8px 18px;border-radius:3px}
+#content1 .button a.download:hover{background:#f13939;color:#fff}
+#content1 .visible{position:absolute;right:5%;top: 50%; transform: translateY(-50%);color:rgba(0,0,0,0.1);font-size:2rem}
+#content1 .visible p{margin:0}
+/* Responsive - Mobil Alan */
+@media screen and (max-width:1040px){.PopularPosts .post-title {width: 65%;}}
+@media(max-width:991px){.nav-toggler{display: block;}.header .nav{width: 100%;padding:0;max-height: 0px;overflow: hidden;visibility: hidden;transition: all 0.5s ease;}.header .nav.open{visibility: visible;}.header .nav ul{padding:12px 15px 0;margin-top: 12px;border-top:1px solid rgba(255,255,255,0.2);}.header .nav ul li{display: block;margin:0;}
+.header .logo{position:absolute;left:0;width:100%;text-align:center;top: 0;}
+.search-icon {right: 0;position:absolute;margin-right: 15px;top: 5px;}
+.header .logo img {max-height:35px;height: auto; float: none; margin: 0 auto;}
+#seaform input[type="search"] {padding:9px 0;}
+#seaform .close {top: 0px;}.PopularPosts .post-title {width: 65%;}}
+@media screen and (max-width:910px){.PopularPosts .post-title {width: 60%;}}
+@media screen and (max-width:800px){.mainleft { width:100%;}.mainright {display: none;}.slideralanimsag,.slideralanimsol{width:100%;float:none;}}
+@media screen and (max-width:640px){.homeimage img{height:130px;}.meme-slider-2 img {height:95px;padding:10px;}.meme-slider-3 .recent-post-title span {font-size:16px;top: 65%;}.meme-slider a,.meme-slider img {height: 250px;}.meme-slider .recent-post-title span {line-height: 20px; font-size: 14px;}.meme-slider-1 a,.meme-slider-1 img {height: 280px }.slideralanimsol {margin-bottom:20px}.meme-slider-2 .widget span {padding: 5px 10px;font-size:12px;}#yazar .widget {height:180px;}#yazar .widget-content {height: 175px}.slideralanimarka {height:260px;}.homeimage h3 {font-size: 14px; height: 60px;}}
+@media screen and (max-width:480px){.homeimage {width:50%;padding: 5px;}}
+@media screen and (max-width:320px){.homeimage h3 {font-size: 14px;}
