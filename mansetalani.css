@@ -1,3 +1,93 @@
+/*Fix: Unnecessary elements removed*/
+.widget-item-control,.item-control.blog-admin,
+.continue,.loadmore,.thread-chrome.thread-collapsed,
+.singleton-element:not(.cookie-choices-info),
+.noAllowNewComments .comment-reply,
+.comments .hidden {display:none}
+/*Fix: Show lightbox*/
+.CSS_LIGHTBOX{z-index:90001!important}
+/*Fix: Responsive images*/
+a[style^=margin-left],
+a[imageanchor]:not([style*=float]) {
+margin-right: 0 !important;
+margin-left: 0 !important;
+}
+.widget-content img,
+img[data-original-height],
+img[data-original-width] {height: auto;}
+/*Fix: Responsive videos*/
+.BLOG_video_class, .b-hbp-video, .b-uploade {
+max-width: 100%;
+}
+/*Fix: Comment Editor*/
+#comment-editor{
+border:0;
+width:100%;
+min-height:220px
+}
+/* reset */
+*,*::before,*::after {margin: 0;padding: 0;box-sizing: border-box;}img{max-width:100%;}embed,iframe,object{margin:0;padding:0;border:0;outline:0}video{display:block;height:auto}p{margin-bottom:0}img{display:inline-block;vertical-align:middle}
+a{text-decoration:none;padding:0;margin:0;color:#717171}ul{list-style:none;padding:0;margin:0}li {list-style: none;padding:0;margin:0}
+/* Font Alanı */
+h1{font-size:1.8rem;margin:0 0 .6em;font-weight:700}h2{font-size:1.6rem;margin:0 0 .6em;font-weight:600}h3{font-size:1.4rem;margin:0 0 .6em;font-weight:500}h4{font-size:1.2rem;margin:0 0 .6em;font-weight:400}h5{font-size:1rem;margin:0 0 .6em;font-weight:400}h6{font-size:.9rem;margin:0 0 .6em;font-weight:400}
+/* devanagari */
+@font-face {font-family: 'Poppins';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8Z11lFc-K.woff2) format('woff2');unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;}@font-face {font-family: 'Poppins';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8Z1JlFc-K.woff2) format('woff2');
+unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face {font-family: 'Poppins'; font-style: normal; font-weight: 300; font-display: swap; src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face {font-family: 'Poppins'; font-style: normal; font-weight: 400; font-display: swap; src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2'); unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;}@font-face {font-family: 'Poppins'; font-style: normal; font-weight: 400; font-display: swap; src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2'); unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face {font-family: 'Poppins'; font-style: normal; font-weight: 400; font-display: swap; src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face {font-family: 'Poppins'; font-style: normal; font-weight: 500; font-display: swap; src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2) format('woff2'); unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;}@font-face {font-family: 'Poppins'; font-style: normal; font-weight: 500; font-display: swap; src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2) format('woff2'); unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face {font-family: 'Poppins'; font-style: normal; font-weight: 500; font-display: swap; src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face {font-family: 'Poppins'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2) format('woff2'); unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;}@font-face {font-family: 'Poppins'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2) format('woff2'); unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face {font-family: 'Poppins'; font-style: normal; font-weight: 600; font-display: swap; src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face {font-family: 'Poppins'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2) format('woff2'); unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;}@font-face {font-family: 'Poppins'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2) format('woff2'); unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face {font-family: 'Poppins'; font-style: normal; font-weight: 700; font-display: swap; src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+body{background:#ffffff none repeat scroll top center;margin:0;padding:0;font-weight:400;text-align:left;font-family: 'Poppins';font-style: normal;}
+/* Logo alani */
+.header .logo{margin:0;position:relative;padding:0px 0px}
+.header .logo h1,.header .logo h2{line-height:70px;font-size:150%;margin:0;padding:0 0px 0 0;text-align:center;transition:all .3s}
+.header .logo h1 img,.header .logo h2 img{padding:0;}
+.header .logo img{height:auto;max-height:90px;width:auto}
+.header .logo h1 a,.header .logo h2 a{color:#f80538}
+.header .logo h1 a:hover,.header.logo h2 a:hover{color:#d63031}
+#header-inner{text-align:center;display:inline-block}
+/*header*/
+.header {background:#ffffff;padding: 12px 0;line-height: 1.5;box-shadow: 0 0 4px rgb(0 0 0 / 10%); border-bottom: 1px solid rgba(0,0,0,0.08);}
+.header .nav ul li{display: inline-block;margin-left:20px;}
+.header .nav ul li a{display: block;font-size: 14px;text-transform: capitalize;color:#202020;padding: 10px 0;transition: all 0.5s ease;}
+.header .nav ul li a.active,.header .nav ul li a:hover{color:#222222;font-weight: 600;}
+.nav-toggler{height: 34px;width: 44px;background-color: #ffffff;border-radius: 4px;cursor: pointer;border:none;display: none;margin-left: 15px;}
+.nav-toggler:focus{outline: none;box-shadow: 0 0 15px rgba(255,255,255,0.5);}
+.nav-toggler span{height: 2px;width: 20px;background-color:#100f0f;display: block;margin:auto;position: relative;transition: all 0.3s ease;}
+.nav-toggler.active span{background-color: transparent;}
+.nav-toggler span::before,.nav-toggler span::after{content: '';position: absolute;left:0;top:0;width: 100%;height: 100%;background-color:#100f0f;transition: all 0.3s ease;}
+.nav-toggler span::before{transform: translateY(-6px);}
+.nav-toggler.active span::before{transform: rotate(45deg);}
+.nav-toggler span::after{transform: translateY(6px);}
+.nav-toggler.active span::after{transform: rotate(135deg);}
+.container{max-width:1170px;margin:auto;position: relative;}
+.row{display: flex;flex-wrap: wrap;}
+.align-items-center{align-items: center;}
+.justify-content-between{justify-content: space-between;}
+/* Orta Alan */
+.main{width: 100%;max-width:1170px;margin:0 auto;overflow: hidden;margin-top: 15px;}
+.mainleft{width:75%;float:left;padding:0 15px;color:#202020}
+.mainleft h1 {font-weight: 500;}
+.mainright{width:25%;float:right;margin-top:0px;}
+.mainright h3{padding:10px}
+.mainright li{padding:0px 10px 10px}
+/* Yazı Alanı */
+.homeimage{width:33.333%;float:left;padding-right:10px;}
+.homeimage img{display: block; width: 100%; height:150px; object-fit: cover;}
+.homeimage h3{padding: 10px 0;overflow:hidden;margin: 0;font-size:16px}
+/* Arama Alanı */
+.search-icon{top:0;float: right;padding:0;font-size:16px}
+.search-icon a{color:#202020}
+#seaform{position:absolute;z-index:9999;top:0;left:0;right:0;background:#fff;opacity:0;transform:scale(0.0);margin:0 0px;transition:all .3s}
+#seaform.open{transform:scale(1.0);opacity:1}
+#seaform input[type="search"]{width:100%;color:#202020;background:#f7f9f8;font-size:14px;outline:none;padding:20px 0;text-indent:5px;border-bottom: none; border-top: none;border-left:1px solid rgba(0,0,0,0.08); border-right:1px solid rgba(0,0,0,0.08);}
+#seaform input[placeholder]::-webkit-input-placeholder{color:#202020}#seaform input[placeholder]::-moz-input-placeholder{color:#202020}#seaform input[placeholder]:-moz-input-placeholder{color:#202020}#seaform input[placeholder]:-ms-input-placeholder{color:#202020}
+#seaform input::-ms-clear,#seaform input::-moz-clear,#seaform input::-webkit-clear{display:none}
+#seaform .close{position:fixed;top:12px;right:5px;color:#202020;background:transparent;font-size:30px;border:0;outline:none;cursor:pointer;transition:all .3s}
+#seaform .close:hover{opacity:.8}#seaform form#search-form{margin:0}
+/* Blog Pager */
+#blog-pager {clear: both; width: auto; padding:15px 15px;line-height: normal; position: relative; display: block; text-align: left; overflow: hidden; margin: 0 auto;background:#f7f9f8}
+.blog-pager a {display:inline-block;position:relative;overflow:hidden; font-size: 14px;padding:10px 20px;background:#0a0a0a;color: #fff;border-radius: 99em;font-weight: 500;}
+.blog-pager a:hover {background:#333}
+/* Yorum */
+.comments-line,.comments-line-c{position:relative;margin:20px auto;text-align:center}.comments-info-th{z-index:2;position:relative;margin-bottom:20px;color:#fff;background:#e17055;display:inline-block;padding:8px 16px;margin:1px 0;font-size:16px;font-weight:600;border-radius:5px}.comments-line-c{text-align:center;margin-bottom:6px}.comments-line:before,.comments-line-c:before{z-index:1;content:"";width:100%;height:1px;background:rgba(0,0,0,0.05);position:absolute;top:50%;left:0;margin-top:-1px}
+#comments{position:relative;margin:10px auto 20px auto;padding:20px;border:1px solid rgba(0,0,0,0.05)}#comments h4{z-index:2;position:relative;margin:0 auto;color:#fff;background:#e17055;display:table;text-align:center;padding:5px 16px;font-size:16px;font-weight:600;border-radius:5px}#comment_block{position:relative}.comment_avatar_wrap{width:42px;height:42px;background:rgba(0,0,0,0.01);text-align:center;margin-bottom:20px;border-radius:100%}#comments .avatar-image-container{float:left;width:42px;height:42px;max-width:42px;max-height:42px;padding:0;margin-top:5px;border-radius:3px}#comments .avatar-image-container img{width:42px;height:42px;max-width:42px;max-height:42px;background:url(https://2.bp.blogspot.com/-fjaZBtfvzac/UN1mw2tUamI/AAAAAAAADkc/XdKqt8hWZ6w/s1600/anon.jpg) no-repeat;border-radius:99em}.comment_name a{padding:5px 0 0 0;font-size:1.1rem;color:#1277cb}.comment_admin .comment_name{font-weight:700;font-size:1.1rem}.comment_admin .comment_date{font-weight:normal;font-size:11px}.comment_name{font-weight:700;position:relative}.comment_service{margin-top:5px}.comment_date{color:#98a5d5;float:right;font-size:11px;font-weight:normal;margin-top:-3px}.comment_inner{margin:12px 0}.comment_child .comment_wrap{padding-left:7%}#comments .comment-block{margin:5px 0 15px;color:#222;line-height:1.3em;border-radius:3px;position:relative;max-width:100%;margin-left:56px;padding:20px;border:1px solid rgba(0,0,0,0.05);box-shadow:0 1px 3px rgba(0,0,0,0.05),0 1px 2px rgba(0,0,0,0.14);transition:all .3s}#comments .comment-block:hover{box-shadow:0 3px 6px rgba(0,0,0,0.1),0 3px 6px rgba(0,0,0,0.13)}#comments .comment-block .comment-content{line-height:1.5em;margin:5px 0 0 0;color:#222;font-size:14px;word-wrap:break-word;padding:10px 0}#comments .comment-reply,#comments .comment-actions a{overflow:hidden;display:inline-block;margin-top:10px;color:#888;text-align:center;text-decoration:none;font-size:12px}#comments .comment-reply:hover,#comments .comment-actions a:hover{color:#222}#comments .datetime a{color:#888;float:right;font-size:11px;font-weight:normal;text-decoration:none}#comments .inline-thread{padding:0 0 0 1em}#comments .thread-toggle{display:inline-block;color:#999;text-align:center;text-decoration:none;font-size:12px}#comments .thread-toggle a{color:#999}.unneeded-paging-control{display:none}.comment-form{max-width:100%;!important}#comment-editor{width:100%!important;background:transparent}.comment_form a{text-decoration:none;text-transform:uppercase;font-size:15px}.comment_reply_form{padding:0 0 0 70px}.comment_reply_form .comment-form{width:99%}.comment_emo_list{padding:0 15px 15px 15px;overflow:hidden;display:inline-block;border-radius:5px;color:#7f8c8d;margin:0 0 5px 0}.comment_emo_list .item{float:left;display:inline-block;text-align:center;overflow:hidden;margin:15px 15px 0 0}.comment_emo_list span{display:block;font-weight:bold;font-size:11px;letter-spacing:1px}.comment_youtube{max-width:100%!important;width:400px;height:225px;display:block;margin:auto}.comment_img{max-width:100%!important}.deleted-comment{padding:10px 10px 10px 10px;display:block;color:rgba(255,255,255,.8)}.comment_header{width:50px}#respond{overflow:hidden;padding-left:10px;clear:both}.comment_avatar img{width:42px;height:auto;background:url(https://3.bp.blogspot.com/-fr42e67HG4I/Vky8HLexiEI/AAAAAAAAM0I/MLMd2qwIH1E/s1600/avatar.png) no-repeat;border-radius:100%}.comment-delete img{float:right;margin-left:15px;margin-top:3px;margin-right:10px}iframe{border:none;overflow:hidden}.small-button1 a{display:none;margin:10px 0 0 0;text-decoration:none;text-transform:none;font-size:13px;color:#fff;padding:4px 10px;cursor:pointer;background:#f39c12;border-radius:3px;transition:all .3s}.small-button1:hover a{background:#222;color:#fff}span.small-button1{text-align:left;display:inline-block}.comments .comments-content .comment-thread ol{margin:0}.comment_emo_list img.comment_emo{width:18px;height:18px;margin:0 0 5px 0}#emo-box,#hide-emo,.comment_author_flag,.comment-form p{display:none}#comments img.comment_emo{width:18px;height:18px;margin:0 3px}.loadmore.hidden{display: none;}
 /* Popular Post */
 .PopularPosts .post-snippet {display: none;}
 .PopularPosts a{font-weight: 500; font-size: 14px; list-style: none; line-height: 1.3em; display: block; overflow: hidden;}
