@@ -1,3 +1,123 @@
+[!] Find (JetAll-head-content) to edit Open Graph and other Meta Tags
+
+---------------------------
+# JetTheme v2.9 Setting #
+---------------------------
+
+<Variable name="tagline" description="Tagline" type="string" value=""/>
+[!] Homepage tagline, ex: BlogName - Tagline
+
+<Variable name="separator" description="Separator" type="string" value=" - "/>
+[!] Title separator ( – ), ( | ), ( • )
+
+<Variable name="description" description="Description" type="string" value=""/>
+[!] Default meta description, recommended 155–160 characters
+
+<Variable name="cover" description="Cover" type="string" value=""/>
+[!] Default meta image, size recommended 1600x700 px
+
+<Variable name="logo" description="Logo" type="string" value=""/>
+[!] Schema logo, size recommended 175x55 px
+
+<Variable name="favicon" description="Favicon" type="string" value=""/>
+[!] Favicon high resolution, required format (.png), min size 200x200 px
+
+<Variable name="analyticId" description="Analytic ID" type="string" value=""/>
+[!] New Google Analytic 2021
+
+<Variable name="caPubAdsense" description="caPubAdsense ID" type="string" value=""/> 
+[!] number only
+
+<Variable name="autoTOC" description="Table of content" type="string" value="true"/>
+[!] true or false
+
+<Variable name="positionTOC" description="Position TOC" type="string" value="noscript"/>
+[!] tag name, class, id
+
+<Variable name="maxLabel" description="Limit Label" type="string" value="3"/>
+[!] Limit Label Display
+
+-------------------------
+# JetTheme Css Variable #
+-------------------------
+
+<Group description="_Main Color">
+<Variable name="keycolor" description="Main Color" type="color" default="#f67938" value="#f67938"/>
+<Variable name="body.background" description="Body Background Color" type="color" default="#ffffff" value="#ffffff"/>
+<Variable name="body.text.color" description="Font Color" type="color" default="#686868" value="#686868"/>
+<Variable name="posts.title.color" description="Heading Color" type="color" default="#343a40" value="#000000"/>
+<Variable name="body.link.color" description="Link Color" type="color" default="$(keycolor)" value="#f67938"/>
+<Variable name="body.hover.color" description="Link Hover" type="color" default="#f46013" value="#f46013"/>
+<Variable name="border.color" description="Border Color" type="color" default="#efefef" value="#efefef"/>
+<Variable name="posts.text.color" description="Blockquote Border Color" type="color" default="$(keycolor)" value="#f67938"/>
+</Group>
+
+<Group description="_Typography">
+<Variable name="body.text" description="Body Font" type="font" default="normal normal 16px system-ui,-apple-system,Segoe UI,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji" value="normal normal 16px system-ui,-apple-system,Segoe UI,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"/>
+<Variable name="posts.title" description="Heading Font" type="font" default="normal bold 40px var(--bs-font-sans-serif)" value="normal bold 40px var(--bs-font-sans-serif)"/>
+<Variable name="title.h2" description="H2 Size" type="length" default="26px" min="12px" max="50px" value="26px"/>
+<Variable name="title.h3" description="H3 Size" type="length" default="22px" min="12px" max="50px" value="22px"/>
+<Variable name="title.h4" description="H4 Size" type="length" default="20px" min="12px" max="50px" value="20px"/>
+<Variable name="title.h5" description="H5 Size" type="length" default="18px" min="12px" max="50px" value="18px"/>
+<Variable name="title.h6" description="H6 Size" type="length" default="16px" min="12px" max="50px" value="16px"/>
+</Group> 
+
+<Group description="_Logo">
+<Variable name="logo.width" description="Logo Max Width" type="length" default="200px" min="50px" max="500px" value="200px"/>
+<Variable name="logo.width.mobile" description="Logo Max Width (mobile)" type="length" default="150px" min="50px" max="500px" value="150px"/>
+</Group>
+
+<Group description="_Header Color">
+<Variable name="header.bg" description="Background" type="color" default="#ffffff" value="#323539"/>
+<Variable name="header.color" description="Font Color " type="color" default="#686868" value="#b6c1cc"/>
+<Variable name="header.border" description="Border Color" type="color" default="#efefef" value="#efefef"/>
+</Group>
+
+<Group description="_Menu">
+<Variable name="tabs.font" description="Menu Font" type="font" default="normal bold 16px var(--bs-font-sans-serif)" value="normal bold 16px var(--bs-font-sans-serif)"/>
+<Variable name="tabs.color" description="Font Color" type="color" default="$(body.text.color)" value="#b6c1cc"/>
+<Variable name="tabs.hover" description="Font Hover" type="color" default="$(keycolor)" value="#f67938"/>
+<Variable name="tabs.selected.color" description="Font Selected" type="color" default="$(keycolor)" value="#f67938"/>
+</Group>
+
+<Group description="_Dropdown Menu">
+<Variable name="dropdown.font" description="Font Size" type="length" default="16px" min="12px" max="50px" value="16px"/>
+<Variable name="dropdown.bg" description="Background Color" type="color" default="$(body.text.color)" value="#323539"/>
+<Variable name="dropdown.color" description="Font Color" type="color" default="$(keycolor)" value="#f67938"/>
+<Variable name="dropdown.hover" description="Font Hover" type="color" default="$(keycolor)" value="#f67938"/>
+<Variable name="dropdown.selected" description="Dropdown Selected Color" type="color" default="$(keycolor)" value="#f67938"/>
+</Group>
+
+<Group description="_Footer Color">
+<Variable name="footer.bg" description="Background Color" type="color" default="#212529" value="#212529"/>
+<Variable name="footer.color" description="Font Color" type="color" default="#9fa6ad" value="#9fa6ad"/>
+<Variable name="footer.link" description="Link Color" type="color" default="#9fa6ad" value="#9fa6ad"/>
+<Variable name="footer.border" description="Border Color" type="color" default="#323539" value="#323539"/>
+</Group>
+
+<Group description="_Socket Color">
+<Variable name="socket.bg" description="Background Color" type="color" default="#09080c" value="#09080c"/>
+<Variable name="socket.color" description="Font Color" type="color" default="#9fa6ad" value="#9fa6ad"/>
+</Group>
+
+<Group description="_Button">
+<Variable name="posts.icons.color" description="Button Color" type="color" default="$(keycolor)" value="#f67938"/>
+<Variable name="labels.background.color" description="Button Hover"  type="color"  default="#f46013" value="#f46013"/>
+</Group>
+
+<Group description="_Comment Form">
+<Variable name="body.text.font" description="Font" type="font" default="normal normal 14px system-ui,-apple-system,Segoe UI,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji" value="normal normal 14px system-ui,-apple-system,Segoe UI,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"/>
+<Variable name="posts.background.color" description="Background" type="color" default="transparent" value="rgba(0,0,0,0)"/>
+</Group>
+*/
+/*
+-----------------------------------------------
+JetTheme Blogger Template
+Name		: JetTheme Core
+Version		: 2.9
+Designer	: jettheme
+URL			: www.jettheme.com
+-----------------------------------------------
 */
 
 :root {
