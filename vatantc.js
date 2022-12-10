@@ -41,7 +41,7 @@ function sidebar_temp(e) {
 function toc_temp(e) {
   var hc = 0;
   var l = 1;
-  return "<div id='toc-post' class='d-inline-block px-3 py-2 mb-4 jt-bg-light rounded'><input id='toc-toggle' class='d-none' autocomplete='off' type='checkbox'/><label for='toc-toggle' class='toc-toggler d-flex align-items-center'><span class='fw-light pe-3'>Table of content</span><span class='dropdown-toggle ms-auto'></span></label>" + e.map(function (data, i) {
+  return "<div id='toc-post' class='d-inline-block px-3 py-2 mb-4 jt-bg-light rounded'><input id='toc-toggle' class='d-none' autocomplete='off' type='checkbox'/><label for='toc-toggle' class='toc-toggler d-flex align-items-center'><span class='fw-light pe-3'>İçerik Tablosu</span><span class='dropdown-toggle ms-auto'></span></label>" + e.map(function (data, i) {
     var n = data.level;
     var text = "";
     if (i == 0) {
