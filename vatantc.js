@@ -2,6 +2,10 @@
 // Gzip
 var scrollTimer = null;$(window).scroll(function() { var viewportHeight = $(this).height(),scrollbarHeight = viewportHeight / $(document).height() * viewportHeight,progress = $(this).scrollTop() /($(document).height() - viewportHeight),distance = progress * (viewportHeight - scrollbarHeight) + scrollbarHeight / 2 - $('#scroll').height() / 2;$('#scroll').css('top', distance).text(' (' + Math.round(progress * 100) + '%)').fadeIn(100);if (scrollTimer !== null) {clearTimeout(scrollTimer);}scrollTimer = setTimeout(function() {$('#scroll').fadeOut();}, 1500);});
 // Ek Js
+ (function() {
+      var items = <data:post.commentJso/>;
+      var msgs = <data:post.commentMsgs/>;
+      var config = <data:post.commentConfig/>;
  var cursor = null;
       if (items && items.length > 0) {
         cursor = parseInt(items[items.length - 1].timestamp) + 1;
