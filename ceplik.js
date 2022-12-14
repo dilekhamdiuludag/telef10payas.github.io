@@ -7,3 +7,17 @@ var vioMagzSetting;function optionVioMagz(i){for(var n in vioMagzSetting)"undefi
 //
 // Gzip
 var scrollTimer = null;$(window).scroll(function() { var viewportHeight = $(this).height(),scrollbarHeight = viewportHeight / $(document).height() * viewportHeight,progress = $(this).scrollTop() /($(document).height() - viewportHeight),distance = progress * (viewportHeight - scrollbarHeight) + scrollbarHeight / 2 - $('#scroll').height() / 2;$('#scroll').css('top', distance).text(' (' + Math.round(progress * 100) + '%)').fadeIn(100);if (scrollTimer !== null) {clearTimeout(scrollTimer);}scrollTimer = setTimeout(function() {$('#scroll').fadeOut();}, 1500);});
+$(document).on("click", ".youtube-player", function () {
+	var iframe = document.createElement("iframe");
+	iframe.setAttribute("src", "//www.youtube.com/embed/" + this.dataset.id + "?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&rel="+ this.dataset.related +"&controls="+this.dataset.control+"&showinfo=" + this.dataset.info); iframe.setAttribute("frameborder", "0"); iframe.setAttribute("id", "youtube-iframe");
+	iframe.setAttribute("style", "width: 100%; height: 100%; position: absolute; top: 0; left: 0;"); 
+	if (this.dataset.fullscreen == 1)
+	{
+		iframe.setAttribute("allowfullscreen", "");
+	}
+	while (this.firstChild)
+	{ 
+		this.removeChild(this.firstChild); 
+	} 
+	this.appendChild(iframe);
+});
